@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Juego Basico</title>
+    <script>
+    function random(min, max){
+        return Math.floor(Math.random()*(max-min+1)+min)
+    }
+    //Estas funciones haran que el usuario eliga el jugador y la maquina
+    let user=0
+    let bot = random(1,6)
+    user=prompt("Elige: 1 para Piedra🥌, 2 para Papel🧻, 3 para Tijera✂")
+    if(user==1){
+        alert("Usaste Piedra🥌")
+    }
+    else if(user==2){
+        alert("Usaste Papel 🧻")
+    }else if(user==3){
+        alert("Usaste Tijera✂")
+    }else{
+        alert("Preferiste Perder :(")
+    }
+    if(bot==1){
+        alert("El Bot uso Piedra🥌")
+    }
+    else if(bot==2){
+        alert("El Bot uso Papel🧻")
+    }else if(bot==3){
+        alert("El Bot uso Tijera✂")
+   
+    }
+    //Estas funciones verifica cada acción que el usuario haya dado y debatira cual sera el ganador
+    if (bot==user){
+        alert("Wow acabas de empatar la batalla aun no culmina")
+    }else if(user==1&&bot==3){
+        alert("Woow, eres un crack le ganaste a tu rival ")
+    }
+    else if(user==2&&bot==1){
+        alert("Woow, eresun crack le ganaste a tu rival ")
+    }
+    else if(user==3&&bot==1){
+        alert("Woow, eres un crack le ganaste a tu rival ")
+    }else{
+        alert("Ohh, acabas de perder")
+    }
+    </script>
+</head>
+<body>
+    <h1></h1>
+</body>
+</html>
